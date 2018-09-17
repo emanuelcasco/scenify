@@ -1,5 +1,5 @@
 const { assert } = require('chai'),
-  scenify = require('../src');
+  scenify = require('../');
 
 describe('Register scenify', () => {
   it('should register a new scenify succesfully', done => {
