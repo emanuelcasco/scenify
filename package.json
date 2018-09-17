@@ -1,6 +1,6 @@
 {
   "name": "scenify",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Scenarios definition for testing purposes",
   "engines": {
     "node": "8.9.4",
