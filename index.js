@@ -1,5 +1,5 @@
 'use strict';
 
-const Scenify = require('./Scenify');
+const Scenify = require('./src/Scenify');
 
 module.exports = new Scenify();
