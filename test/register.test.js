@@ -3,9 +3,9 @@ const { assert } = require('chai'),
 
 describe('Register simulacrum', () => {
   it('should register a new simulacrum succesfully', done => {
-    simulacrum.define('Should save a simple calculation', num => 10 * num);
+    simulacrum.define('define a multiplication by 10', num => 10 * num);
     simulacrum
-      .perform('Should save a simple calculation', 5)
+      .perform('define a multiplication by 10', 5)
       .then(result => assert.equal(result, 50))
       .then(() => done())
       .catch(err => done(err));
@@ -13,8 +13,8 @@ describe('Register simulacrum', () => {
 
   it('should fail when try register a simulacrum twice', done => {
     try {
-      simulacrum.define('Should save a simple calculation', num => 10 * num);
-      simulacrum.define('Should save a simple calculation', num => 10 * num);
+      simulacrum.define('define a multiplication by 10', num => 10 * num);
+      simulacrum.define('define a multiplication by 10', num => 10 * num);
       done('Should throw an error');
     } catch (error) {
       done();

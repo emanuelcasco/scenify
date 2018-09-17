@@ -5,14 +5,26 @@ Scenarios definition for testing purposes.
 ## First steps
 
 #### Installing
-Get the latest version of node from the [official website](https://nodejs.org/) or using [nvm](https://github.com/creationix/nvm)
-Nvm approach is preferred.
+
+Simply run:
+
+> npm i simulacrum
 
 #### Define a scenario
-Run ```npm install``` or ```yarn``` from rootpath of the project.
+
+```js
+simulacrum.define('define a scenario', params => {
+    /* Actions to be done when scenario is performed */
+});
+```
 
 #### Perform a scenario
-First run ```npm install prompt``` and then run ```node ./scripts/kick-off.js``` from project's rootpath to remove the existing sample project and start developing your app.
+
+```js
+simulacrum.perform('define a multiplication by 10').then(res => {
+    /* Do stuff with scenario */
+});
+```
 
 ## Contributing
 
