@@ -1,4 +1,4 @@
-# Simulacrum 
+# Scenify 
 
 Scenarios definition for testing purposes.
 
@@ -8,12 +8,12 @@ Scenarios definition for testing purposes.
 
 Simply run:
 
-> npm i simulacrum
+> npm i scenify
 
 #### Define a scenario
 
 ```js
-simulacrum.define('define a scenario', params => {
+scenify.define('define a scenario', params => {
     /* Actions to be done when scenario is performed */
 });
 ```
@@ -21,7 +21,7 @@ simulacrum.define('define a scenario', params => {
 #### Perform a scenario
 
 ```js
-simulacrum.perform('define a multiplication by 10').then(res => {
+scenify.perform('define a multiplication by 10').then(res => {
     /* Do stuff with scenario */
 });
 ```

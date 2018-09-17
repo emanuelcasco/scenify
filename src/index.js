@@ -1,5 +1,5 @@
 'use strict';
 
-const Simulacrum = require('./Simulacrum');
+const Scenify = require('./Scenify');
 
-module.exports = new Simulacrum();
+module.exports = new Scenify();

@@ -2,7 +2,7 @@
 
 const Scenario = require('./Scenario');
 
-module.exports = class Simulacrum {
+module.exports = class Scenify {
   constructor(options = {}) {
     this.options = options;
     this.scenarios = {};

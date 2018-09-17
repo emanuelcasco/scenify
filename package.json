@@ -1,5 +1,5 @@
 {
-  "name": "simulacrum",
+  "name": "scenify",
   "version": "0.1.0",
   "description": "Scenarios definition for testing purposes",
   "engines": {
@@ -27,14 +27,14 @@
   ],
   "main": "app.js",
   "author": "Emanuel Casco",
-  "homepage": "https://github.com/emanuelcasco/simulacrum",
+  "homepage": "https://github.com/emanuelcasco/scenify",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emanuelcasco/simulacrum.git"
+    "url": "https://github.com/emanuelcasco/scenify.git"
   },
   "bugs": {
-    "url": "https://github.com/emanuelcasco/simulacrum/issues"
+    "url": "https://github.com/emanuelcasco/scenify/issues"
   },
   "devDependencies": {
     "babel": "6.23.0",
