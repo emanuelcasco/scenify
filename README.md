@@ -13,16 +13,31 @@ Simply run:
 #### Define a scenario
 
 ```js
-scenify.define('define a scenario', params => {
-    /* Actions to be done when scenario is performed */
-});
+scenify.define('Create default user', params => User.create(params));
 ```
 
 #### Perform a scenario
 
 ```js
-scenify.perform('define a multiplication by 10').then(res => {
-    /* Do stuff with scenario */
+describe('Test authorization', () => {
+    it("should access into route succesfully", done => {
+      userScenarios.perform('Create default user').then(user => {
+        const hash = authenticate(user.email);
+        chai
+          .request(server)
+          .get('/restricted_route')
+          .set('authorization', hash)
+          .send()
+          .then(res => {
+            res.should.have.status(200);
+            res.should.be.json;
+
+            res.body.message.should.be.equal('Welcome!'); // TODO
+          })
+          .then(() => done())
+          .catch(err => done(err));
+      });
+    });
 });
 ```
 
